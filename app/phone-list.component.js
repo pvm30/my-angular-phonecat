@@ -5,6 +5,8 @@ angular.
   module('phonecatApp').
   component('phoneList', {
     template:
+        '<p>Total number of phones: {{$ctrl.phones.length}}</p>' +
+        '<ul>' +
         '<ul>' +
           '<li ng-repeat="phone in $ctrl.phones">' +
             '<span>{{phone.name}}</span>' +
